@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'somdata_ex.apps.SomdataExConfig',
+    'django_crontab'
 ]
 
 MIDDLEWARE = [
@@ -101,6 +102,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CRONJOBS = [
+    ('* * * * *', 'somdata_ex.pulling_data.putodios')
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
