@@ -103,7 +103,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 CRONJOBS = [
-    ('* * * * *', 'somdata_ex.pulling_data.putodios')
+    ('* * * * *', 'somdata_ex.pulling_data.pull')
 ]
 
 # Internationalization
